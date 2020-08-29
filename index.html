@@ -1,30 +1,40 @@
 <html>
 <head>
-<title> Mihajlo Idvorski Pupin </title>
-<style type "text/css">
-#section { position : fixed ; left: 250px ;  }
-#nav { position : absolute ; top: 50 }
-p {color: #7B68EE ; font-family: arial, monospace ; }
-h1 { color: #6A5ACD ; font-family: arial, sans-serif ;}
-ul { list-style-type: square ;}
-</style>
+<title> css </title>
+<style>
+a[href="http://www.google.com/"] {color: green; }
+a[href="https://www.google.com/doodles"] {color: green; }
+a[href="https://www.link-group.eu/"] {color: red; }
+#second-div  p:nth-child(2n+2) {color: red  ;} 
+#second-div  p:nth-child(2n+1) {color: blue ;} 
+#first-div > p::after {content: " - New";color: yellow;}
+#second-div  p:last-child:hover { font-style: italic ; cursor: pointer; }
+</style
 </head>
 <body>
+<div id="section">
+ <h1> Main heading </h1>
 
-<div id = "nav">
-<ul>
-<li> <a href ="index.html">Main page </a>
-<li> <a href ="pupin2.html">Early life and education </a>
-<li> <a href ="pupin3.html">Literary work </a>
-<li> <a href ="pupin4.html">Pupin coils </a>
-</ul>
+    <p> Paragraph 1 </p>
+<div id="nav">
+       <a href="http://www.google.com/">Google</a> <a href= "https://www.google.com/doodles">Google Doodles</a>  <a href= "https://www.link-group.eu/">Goto Link-group</a>
 </div>
-<div id = "section">
-<h1>Mihajlo Idvorski Pupin </h1>
-<img src ="pupin.jpg" alt="pupin.jpg"><br>
-<p>Mihajlo Idvorski Pupin, Ph.D., LL.D. (Serbian Cyrillic: Михајло Идворски Пупин; 9 October 1858 – 12 March 1935), also known as Michael I. Pupin, was a Serbian American physicist and physical chemist. <br>
-Pupin is best known for his numerous patents, including a means of greatly extending the range of long-distance telephone communication by placing loading coils (of wire) at predetermined intervals along the transmitting wire (known as "pupinization").<br> 
-Pupin was a founding member of National Advisory Committee for Aeronautics (NACA) on March 3, 1915, which later became NASA.</p><br>
+ <h2> Subheading </h2>
+<div id="first-div">
+    <p> Paragraph 2 </p>
+    <p> Paragraph 3 </p>
+
+ <h3> Sub subheading </h3>
+ <div id="second-div">
+    <p> Paragraph 4 </p>
+    <p> Paragraph 5 </p>
+    <p> Paragraph 6 </p>
+    <p> Paragraph 7 </p>
+    <p> Paragraph 8 </p>
+    <p> Paragraph 9 </p>
+    <p> Paragraph 10 </p> 
+</div>
+</div>
 </div>
 </body>
 </html>
