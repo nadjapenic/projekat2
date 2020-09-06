@@ -1,40 +1,52 @@
 <html>
 <head>
-<title> css </title>
-<style>
-a[href="http://www.google.com/"] {color: green; }
-a[href="https://www.google.com/doodles"] {color: green; }
-a[href="https://www.link-group.eu/"] {color: red; }
-#second-div  p:nth-child(2n+2) {color: red  ;} 
-#second-div  p:nth-child(2n+1) {color: blue ;} 
-#first-div > p::after {content: " - New";color: yellow;}
-#second-div  p:last-child:hover { font-style: italic ; cursor: pointer; }
-</style
+<title> Galerija slika </title>
+
 </head>
+
 <body>
-<div id="section">
- <h1> Main heading </h1>
+<style>
+div.primer1 {
+   margin: 5px;
+   border: 1px solid rgba(249,147,1,1.00);
+   height: auto;
+   width: auto;
+   float: left;
+   text-align: center;
+}
+div.primer1 img { padding: 5px }
+div.primer1 a { color: blue; text-decoration: none }
+div.primer1 img:hover { background-color: blue }
+</style>
+<p><h3>Galerija slika</h3></p>
+<div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
+   <div class="napis">Image title</div>
+</div>
+<div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title"   />
+   <div class="napis">Image title</div>
+</div><div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
+   <div class="napis">Image title</div>
+</div>
 
-    <p> Paragraph 1 </p>
-<div id="nav">
-       <a href="http://www.google.com/">Google</a> <a href= "https://www.google.com/doodles">Google Doodles</a>  <a href= "https://www.link-group.eu/">Goto Link-group</a>
+<br>
+<br><br><br><br><br><br><br><br>
+<div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
+   <div class="napis">Image title</div>
+</div><div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
+   <div class="napis">Image title</div>
+</div><div class="primer1">
+   
+   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
+   <div class="napis">Image title</div>
 </div>
- <h2> Subheading </h2>
-<div id="first-div">
-    <p> Paragraph 2 </p>
-    <p> Paragraph 3 </p>
-
- <h3> Sub subheading </h3>
- <div id="second-div">
-    <p> Paragraph 4 </p>
-    <p> Paragraph 5 </p>
-    <p> Paragraph 6 </p>
-    <p> Paragraph 7 </p>
-    <p> Paragraph 8 </p>
-    <p> Paragraph 9 </p>
-    <p> Paragraph 10 </p> 
-</div>
-</div>
-</div>
-</body>
 </html>
