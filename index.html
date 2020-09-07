@@ -1,62 +1,35 @@
 <html>
 <head>
-<meta name="viewport" content="width-device-width, initial-scale=1.0">
-<title> Galerija slika </title>
+<title> Css </title>
+<style>
+  a[href="http://www.google.com/"] {color: green; }
+  a[href="https://www.google.com/doodles"] {color: green; }
+  a[href="https://www.link-group.eu/"] {color: red; }
+   p:nth-of-type(2n+4) {color: red ;}
+   p:nth-of-type(2n+5)  {color: blue;} 
+   p:nth-of-type(2)::after {content: " - New";color: yellow;}
+   p:nth-of-type(3)::after {content: " - New";color: yellow;}
+   p:last-child:hover { font-style: italic ; cursor: pointer; }
+</style>
 </head>
 <body>
-<style>
-#grid {display:grid; }
-#flexbox {border 1px solid rgba(249,147,1,1.00); display:flex; }
-div.primer1 {
-   margin: 5px;
-   border: 1px solid rgba(249,147,1,1.00);
-   height: auto;
-   width: auto;
-   float: left;
-   text-align: center;
-}
-div.primer1 img { padding: 5px }
-div.primer1 a { color: blue; text-decoration: none }
-div.primer1  { background-color: blue }
-</style>
-<body>
+  <h1> Main heading </h1>
+      <p> Paragraph 1 </p>
+      <a href="http://www.google.com/">Google</a> <a href= "https://www.google.com/doodles">Google Doodles</a>  <a href= "https://www.link-group.eu/">Goto Link-group</a>
+  
+  <h2> Subheading </h2>
 
+      <p> Paragraph 2 </p>
+      <p> Paragraph 3 </p>
+	  
+  <h3> Sub subheading </h3>
 
-<p><h3>Galerija slika</h3></p>
-<div id="grid">
-<div class ="container">
-<div id "flexbox">
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title"   />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-</div>
-
-<br>
-<br><br><br><br><br><br><br><br>
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-</div>
+      <p> Paragraph 4 </p>
+      <p> Paragraph 5 </p>
+      <p> Paragraph 6 </p>
+      <p> Paragraph 7 </p>
+      <p> Paragraph 8 </p>
+      <p> Paragraph 9 </p>
+      <p> Paragraph 10</p>
 </body>
 </html>
