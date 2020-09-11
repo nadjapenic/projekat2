@@ -16,7 +16,10 @@
 		 border-radius:50%;
 		 position:relative;
 		 background: linear-gradient( #fb5dad, #55fb9f, #b97aff);
-		 animation:animate 0.5s linear infinite;	}
+		 animation:animate 0.5s linear infinite;
+filter: blur(1px);
+drop-shadow(1px 1px);		 }
+
 
 @keyframes animate {from {transform:rotate(0deg);}
                     to   {transform:rotate(360deg);}}
@@ -26,9 +29,13 @@
                bottom:40px;
                left:40px;
                right:40px;
+			   color:black;
                background-color: #050210;
-               border-radius:50%;}	
-			  
+               border-radius:50%;
+			   animation:un 0.5s linear infinite ;}	
+@keyframes un {from {transform:scale(0.5, 0.5);}
+               to {transform:scale (4.5, 4.5)};}
+                  		  
 
 </style>
 </head>
