@@ -1,61 +1,16 @@
 <html>
 <head>
-<meta name="viewport" content="width-device-width, initial-scale=1.0">
-<title> Galerija slika </title>
+<title> V valjka </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<style>
-#grid {display:grid; }
-#flexbox {border 1px solid rgba(249,147,1,1.00); display:flex; }
-div.primer1 {
-   margin: 5px;
-   border: 1px solid rgba(249,147,1,1.00);
-   height: auto;
-   width: auto;
-   float: left;
-   text-align: center;}
-div.primer1 img { padding: 5px }
-div.primer1 a { color: blue; text-decoration: none }
-div.primer1  { background-color: blue }
-</style>
-<body>
 
-
-<p><h3>Galerija slika</h3></p>
-<div id="grid">
-<div class ="container">
-<div id "flexbox">
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title"   />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-</div>
-
-<br>
-<br><br><br><br><br><br><br><br>
-<div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div><div class="primer1">
-   
-   <img src="placeholder-image.png" width="160" height="110" alt="Image title" />
-   <div class="napis">Image title</div>
-</div>
-</div>
+<script>
+   var numberH = prompt(" Unesite visinu valjka H ");
+   var numberr = prompt(" Unesite poluprečnik valjka r");
+   const NUMBERPI = 3.14;
+   var sum = parseInt (numberr) * parseInt (numberr) * parseInt (NUMBERPI) * parseInt (numberH);
+   alert ("Zapremina valjka je: " + sum);
+</script>
 </body>
 </html>
