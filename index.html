@@ -1,16 +1,37 @@
 <html>
 <head>
-<title> V valjka </title>
+<title> Aritmeticke operacije </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <script>
-   var numberH = prompt(" Unesite visinu valjka H ");
-   var numberr = prompt(" Unesite poluprečnik valjka r");
-   const NUMBERPI = 3.14;
-   var sum = parseInt (numberr) * parseInt (numberr) * parseInt (NUMBERPI) * parseInt (numberH);
-   alert ("Zapremina valjka je: " + sum);
+
+
+   let a = prompt("unesite prvi broj: ");
+   let OP = prompt("unesite operaciju: ");
+   let b = prompt("unesite drugi broj: ");
+   switch (OP){
+   case "+":
+   function calculateRectArea( a, b) {return parseInt(a)+parseInt(b) ;};
+   alert(parseInt(a)+parseInt(b));
+   break;
+   case "-":
+   function calculateRectArea( a, b) {return parseInt(a)-parseInt(b) ;};
+   alert(parseInt(a)-parseInt(b));
+   break;
+   case "*":
+   function calculateRectArea( a, b) {return parseInt(a)*parseInt(b) ;};
+   alert(parseInt(a)*parseInt(b));
+   break;
+   case "/":
+   function calculateRectArea( a, b) {return parseInt(a)/parseInt(b) ;};
+   alert(parseInt(a)/parseInt(b));
+   break;
+   default:
+   alert(" Greska ");}
+   
+   
 </script>
 </body>
 </html>
